@@ -1,0 +1,55 @@
+<!--pages/plan/detail.wxml-->
+<view class="page">
+<form bindsubmit='submitplan'>
+  <view class="weui-cells weui-cells1">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">标签</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name='first' class="weui-input" placeholder='不超过三个字'   bindinput="nameChange" value='{{name}}' />
+      </view>
+    </view>
+
+     <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">几点开始？</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="time" class="weui-input" value="{{time}}" start="00:00" bindchange="bindTimeChange" end="23:59">
+          <view class="picker">
+            {{time}}
+          </view>
+        </picker>
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">多久？</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name='third' class="weui-input" placeholder='以小时为单位'  bindinput="time_lastChange" value='{{time_last}}' />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">描述</view>
+      </view>
+
+    </view>
+    
+   
+    
+   
+  </view>
+   <textarea class='texta' name='forth' placeholder='做什么？去哪儿？'  bindinput="moreChange" value='\t{{more}}' />
+  
+  <view class="page__bd page__bd_spacing">
+    <button class="weui-btn" bindtap='saveData' type="lans" form-type='submit'>
+    保存</button>
+    <button class="weui-btn" bindtap='deleteData' type="{{type}}">删除</button>
+  </view>
+  </form>
+</view>

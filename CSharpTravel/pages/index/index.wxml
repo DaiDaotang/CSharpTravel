@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="whole">
+  <view class="container">
+
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+      
+        <view class='userinfoA'>
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </view>
+        
+        <view class="firstcolumn">
+          <image src="../../image/iconlike.png" class='icon0 icon1' bindtap='turn2Like'></image> 
+          <image src="../../image/iconwork.png" class='icon0 icon2' bindtap='turn2Plan'></image>
+          <image src="../../image/iconmap.png" class='icon0 icon3' bindtap='turn2Map'></image>
+        </view>
+  
+        <view class="columns">
+          <view class="onecolumn" bindtap='turn2Payment'>
+            <text>账单(敬请期待...）</text> 
+            <text class='payment'>￥{{money}}</text>
+          </view>
+          <view class="onecolumn" bindtap='turn2Ever'>
+            <text>随机推荐攻略哦</text>
+            <view class='arrow'></view>
+          </view> 
+        </view>
+        
+        <view class="columns">
+          <view class="onecolumn" bindtap='turn2AboutUs'>
+            <text>关于我们</text> 
+            <view class='arrow'></view>
+          </view>
+          <view class="onecolumn" bindtap='turn2What'>
+            <text>打个赏吧</text>
+            <view class='arrow'></view>
+          </view>  
+        </view>
+
+      </block>
+    </view>
+  </view>
+</view>

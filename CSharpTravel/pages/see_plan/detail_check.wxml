@@ -1,0 +1,42 @@
+<!--pages/see_plan/detail_check.wxml-->
+<view class="page" style='color:white'>
+  <view class="weui-cells weui-cells1">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">标签</view>
+      </view>
+      <view class="weui-cell__bd">
+        <view class="weui-input">{{name}}</view>
+      </view>
+    </view>
+    
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">几点开始？</view>
+      </view>
+      <view class="weui-cell__bd">
+          <view class="weui-input">{{time}}</view>      
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">多久？</view>
+      </view>
+      <view class="weui-cell__bd">
+        <view class="weui-input">{{time_last}}</view> 
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">描述</view>
+      </view>
+    </view>
+   
+  </view>
+  <view class="weui-input">{{more}}</view> 
+ 
+</view>
+

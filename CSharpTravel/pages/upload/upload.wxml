@@ -1,0 +1,23 @@
+<!--pages/upload/upload.wxml-->
+<view class='whole'>
+  <view class="view1">
+    <input class='input-title' placeholder="输入标题" bindinput="voteTitle"></input>
+  </view>
+  <form bindsubmit='submit'class='form1'>
+    <view class="view1">
+          <textarea placeholder='和大家分享你的旅行吧~' name='content'></textarea>
+    </view>  
+        <view class="img-v">
+          <view class="img" wx:for="{{imgs}}" wx:for-item="item">
+            <image src="{{item}}" class='upImg' data-index="{{index}}" mode="aspectFill" bindtap='previewImg'></image> 
+          </view>
+          <view class="upload-img-btn" bindtap="chooseImg">
+            <image src='/image/upload.png'></image>
+          </view>
+        </view>
+        <button class='submit' formType='submit' disabled="{{loading}}">提交</button>
+        <view class='preview' animation='{{animation}}' wx:if="{{imgPreview!=''}}">
+          <image class='previewImage' src="{{imgPreview}}" mode='widthFix'  bindtap='closePreview'></image>
+        </view>
+  </form>
+</view>

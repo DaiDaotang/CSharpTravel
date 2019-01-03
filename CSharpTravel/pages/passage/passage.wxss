@@ -1,0 +1,182 @@
+/* pages/passage/passage.wxss */
+.container {
+    margin-top: 20px;
+    padding: 0;
+    font-size: 14rpx;
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+
+.title {
+    position: relative;
+    width: 700rpx;
+    padding: 40rpx 50rpx 30rpx;
+    background: #298DE5;
+    color:#fff;
+    font-size: 38rpx;
+    line-height: 48rpx;
+}
+
+.author-wrp{
+    position: relative;
+    width: 750rpx;
+    height: 150rpx;
+    background: #fff;
+}
+.author-wrp .bg-half{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150rpx;
+    background: #298DE5;
+}
+.author {
+    position: relative;
+    margin: 0 auto;
+    width: 630rpx;
+    height: 90rpx;
+    padding: 30rpx;
+    background: #fff;
+    border: solid 1px #ebebeb;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #bebebe;
+    margin-top: 30px;
+}
+.author .avatar {
+    flex: 1;
+    width: 90rpx;
+    height: 90rpx;
+}
+
+.author .avatar image {
+    display: inline-block;
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 90rpx;
+}
+.author .collection{
+  flex: 0.5;
+  width: 60rpx;
+  height: 60rpx;
+}
+.author .collection image{
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 60rpx;
+}
+.author .author-info{
+    flex:5;
+    text-align: left;
+    padding: rpx 20rpx;
+    height:100rpx;
+    width: 70%;
+}
+.author .author-info .author-name{
+    display: inline-block;
+    font-size: 30rpx;
+    line-height:45rpx; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+
+}
+.author .author-info .author-des{
+    font-size: 28rpx;
+    color: #808080;
+    line-height: 30rpx;
+    width: 100%;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+/*
+.passage .follow{
+    flex: 2;
+    padding: 15rpx 0;
+    font-size: 22rpx;
+}
+.passage .follow text{
+    display: inline-block;
+    padding: 15rpx 20rpx;
+    color: #40bcd0;
+    border: solid 2px #40bcd0;
+    border-radius: 6rpx;
+}
+*/
+.passage-content{
+  margin-top: 50px;
+  width: 80%;
+    padding: 30rpx,40rpx;
+    background: #ffffff;
+}
+.passage-content text{
+    font-size: 32rpx;
+    color: #454545;
+    line-height: 44rpx;
+}
+.passage-content image{
+    width: 100%;
+    margin: 20rpx 0;
+}
+
+/*
+.passage-footer{
+    position: fixed;
+    bottom: 0;
+    height: 70rpx;
+    border-top: solid 1px #ebebeb;
+    background: #ffffff;
+    width: 670rpx;
+    padding: 20rpx 40rpx;
+}
+.passage-footer .good{
+    flex: 1;
+    /*display: inline-block;
+    height: 40rpx;
+    border: solid 1px #d1d1d1;
+    border-radius: 3px;
+    padding: 10rpx 8rpx;
+    margin: 10rpx 0;
+}
+.passage-footer .good .good-bad{
+    display: inline-block;
+}
+.passage-footer .good image{
+    display: inline-block;
+    width: 38rpx;
+    height: 38rpx;
+    vertical-align: middle;
+}
+.passage-footer .good .good-num{
+    display: inline-block;
+    padding: 10rpx 4rpx;
+    /*font-size: 24rpx;
+}
+.passage-footer .operation-wrp{
+    flex: 5;
+}
+.passage-footer .operation{
+    justify-content: space-between;
+    padding: 0 0 0 60rpx;
+}
+.passage-footer .operation-btn{
+    flex: 1;
+    text-align: center;
+}
+.passage-footer .operation image{
+    display: block;
+    margin: 0 auto;
+    width: 50rpx;
+    height: 50rpx;
+}
+.passage-footer .operation-btn text{
+    display: block;
+    font-size: 14rpx;
+    color: #bebebe;
+}
+*/

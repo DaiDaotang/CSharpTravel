@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/passage/passage",
+    "pages/discovery/discovery",
+    "pages/upload/upload",
+    "pages/add/add",
+    "pages/search/search",
+    "pages/test/test",
+    "pages/add_travel/add_travel",
+    "pages/map/map",
+    "pages/add_share/add_share",
+    "pages/add_travelplan/detail",
+    "pages/add_travelplan/plan",
+    "pages/add_strategy/new",
+    "pages/add_travelplan/detail_check",
+    "pages/add_travelplan/plan_check",
+    "pages/collect/collect",
+    "pages/passage_strategy/passage",
+    "pages/aboutus/aboutus",
+    "pages/search_strategy/search_strategy",
+    "pages/see_plan/see_plan",
+    "pages/see_plan/detail_check"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "C#爱旅行",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#dadada",
+    "selectedColor": "#09bb07",
+    "backgroundColor": "#fff",
+    "borderStyle": "#f6f6f6",
+    "list": [
+      {
+        "pagePath": "pages/discovery/discovery",
+        "text": "查找",
+        "iconPath": "image/图层0.png",
+        "selectedIconPath": "image/search.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "新建",
+        "iconPath": "image/add.png",
+        "selectedIconPath": "image/new.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "个人",
+        "iconPath": "image/mine.png",
+        "selectedIconPath": "image/individual.png"
+      }
+    ]
+  }
+}

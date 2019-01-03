@@ -1,0 +1,23 @@
+<!--pages/passage/passage.wxml-->
+<view class="container"> 
+   
+   <view class="author-wrp">
+      <view class="bg-half"></view>
+      <view class="author flex-wrp" style="display:flex;flex-direction:row;" >
+            <view class="avatar flex-item">
+                <image class="avatar img" src="{{author_img}}"></image>
+            </view>
+            <view class="author-info flex-item">
+                <text class="author-name">{{author_name}}</text>
+                <text class="author-des">{{author_description}}</text>
+            </view>
+            <view class="collection flex-item" bindtap='collectPassageTap'>
+              <image class="collection image"src="{{imgEnjoy}}"></image>
+            </view>
+       </view>
+   </view>
+   <view class="passage-content">
+        <text>{{passagebody_text}}</text>
+        <image src="{{passagebody_img}}"></image>
+   </view>
+</view>

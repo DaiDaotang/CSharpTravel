@@ -1,0 +1,63 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  background:  rgb(252, 252, 252)
+} 
+.container.withtab{
+  margin: 105rpx 0 0 0;
+  /*top: 105rpx;*/
+}
+.top-tab{
+  width: 750rpx;
+  height: 100rpx;
+  background: #298DE5;
+  color: #8CCEFD;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  box-shadow: 0 2px 2px #bebebe;
+  margin: 0 0 8rpx 0;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.toptab.active{
+  color: #ffffff;
+  border-bottom: solid 2px #ffffff;
+}
+.container{
+  padding: 0;
+  font-size: 30rpx;
+  color: #000;
+}
+/*一栏*/
+.container .feed-item{
+  width: 690rpx;
+  padding: 30rpx 30rpx 20rpx;
+  margin: 7rpx 0 6rpx 0;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px #eeeeee;
+}
+/*图片样式*/
+.container .feed-item .feed-content image{
+  width:100%;
+}
+.feed-item.feed-item.feed-content{
+  padding:10rpx 0 0 0;
+  margin:20px;
+}
+/*文本样式*/
+.container .feed-item .feed-content text{
+  line-height: 40rpx;
+  font-weight: 600px;
+  color: #a0acac;
+  font-size: 35rpx;
+}
+

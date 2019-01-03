@@ -1,0 +1,11 @@
+<!--pages/aboutus/aboutus.wxml-->
+<whole>
+  <view class="view">
+    <text class='input-title' style='border-bottom: 2px solid rgb(142, 142, 163);flex:5'>CC老板和三个爆肝职员的故事</text>
+  </view>
+      <view class="view" style='border-radius: 20rpx;'>
+<image class="img" src="img/1.png" mode:widthFix bindtap="onMusicTap"></image>
+<text style='text-align:center;font-size:30rpx;  line-height: 2;padding-top:10rpx'>在选定实验项目的过程中 \n大家每个人都提出了不同的想法 \n记账app游记app巴拉巴拉... \n于是我们一拍即合 \n决定做一个能(×)记账的游记app  \n \n本项目由CC老板带领的C#搬砖团队 \n倾情贡献
+</text>
+      </view>
+</whole>

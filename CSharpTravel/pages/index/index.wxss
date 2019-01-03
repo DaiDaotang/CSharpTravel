@@ -1,0 +1,111 @@
+/**index.wxss**/
+.whole {
+  width: 100%;
+  height: 100%;  
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: white;
+}
+
+.usermotto {
+  margin-top: 20px;
+}
+
+.userinfoA {  
+  position: relative;  
+  width: 750rpx;  
+  height: 320rpx;  
+  color: #fff;  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center; 
+  font-size: 25px;  
+  background-color: #00e1ff;  
+  border-radius:40%;  
+}  
+  
+.userinfo-avatar {  
+  overflow:hidden;  
+  display: block;  
+  width: 160rpx;  
+  height: 160rpx;  
+  margin: 20rpx;  
+  margin-top: 50rpx;  
+  border-radius: 50%;  
+  border: 2px solid #fff;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}  
+
+.columns {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 35px;
+  width: 80%;
+}
+
+.onecolumn {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid darkgrey;
+}
+
+.arrow{
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999;
+  position: absolute;
+  right: 10%;
+  transform: rotate(45deg);
+}
+
+.payment {
+  position: absolute;
+  right: 10%;
+}
+
+.firstcolumn {
+  margin-top: 30px;
+  width: 100%;
+  height: 70px; 
+  display: flex;
+  justify-content: center;
+}
+
+.icon0 {
+  margin-top: 5px;
+}
+
+.icon1 {
+  margin-right: 66px;
+  height: 50px;
+  width: 50px;
+}
+
+.icon2 {
+  margin-top: 9px;
+  height: 40px;
+  width: 40px;
+}
+
+.icon3 {
+  margin-left: 66px;
+  height: 50px;
+  width: 50px;
+}

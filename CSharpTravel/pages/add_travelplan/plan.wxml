@@ -1,0 +1,48 @@
+<!--pages/plan/plan.wxml-->
+
+<view class='cl'></view>
+<view class="top">
+  <view class="top-text">
+    <view>{{month}}</view>
+    <view>月</view>
+  </view>
+  <view wx:for="{{week_day}}" class="top-text">
+   
+ 
+    <view class='{{item.k}}' data-id='{{index}}' bindtap='choose'>
+    
+      <view>{{item.week}}</view>
+      <view>{{item.day}}</view>     
+     
+    </view>
+
+    
+    
+   
+  </view>
+</view>
+<scroll-view scroll-y="true" class="scroll">
+  <view style="height:900rpx;width:750rpx;display:flex;border-top:1px solid #e9e8e8;">
+    <view style="background-color:#f8f8f8;color:#666666;">
+      <view wx:for="{{times}}" class="left {{item.class2}}">
+        {{item.name}}
+      </view>
+    </view>
+    <!--事件-->
+    <view wx:for="{{xw_kc}}">
+      <view class="flex-item kcb-item {{item.bg}}"  data-statu="open" data-index="{{index}}" style="margin-left:{{item.xq*94+10}}rpx;margin-top:{{item.time_begin*37.4}}rpx;height:{{item.time_last*37.4}}rpx;"> 
+      <navigator url='detail?new=0&time_last={{item.time_last}}&name={{item.kcmc}}&time={{item.time_begin}}&more={{item.more}}&index={{index}}&xq={{item.xq}}'>
+            <view class="smalltext">{{item.kcmc}}</view>
+          </navigator>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<view class="page__bd page__bd_spacing">
+  <button   class="weui-btn" type="lans">保存</button>
+</view>
+<navigator url='detail?new=1&idd={{travelId}}'>
+  <view class='pinglun_jia'>
+    <image src='/assets/images/addNew.png'></image>
+  </view>
+</navigator>

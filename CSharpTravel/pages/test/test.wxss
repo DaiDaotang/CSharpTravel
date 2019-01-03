@@ -1,0 +1,6 @@
+/* pages/test/test.wxss */
+.myview {
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+}

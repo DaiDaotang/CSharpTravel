@@ -1,0 +1,25 @@
+<!--pages/add_strategy/add_strategy.wxml-->
+<!--pages/upload/upload.wxml-->
+<view class='whole'>
+  <form bindsubmit='submit'class='form1'>
+    <view class="view1">
+      <textarea placeholder='分享一下~' name='content'></textarea>
+    </view>  
+
+    <view class="img-v">
+      <view class="img" wx:for="{{imgs}}" wx:for-item="item">
+         <image src="{{item}}" class='upImg' data-index="{{index}}" mode="aspectFill" bindtap='previewImg'></image> 
+      </view>
+      <view class="upload-img-btn" bindtap="chooseImg">
+        <image src='/image/upload.png'></image>
+      </view>
+    </view>
+
+    <button class='submit' formType='submit' disabled="{{loading}}">提交</button>
+
+    <view class='preview' animation='{{animation}}' wx:if="{{imgPreview!=''}}">
+      <image class='previewImage' src="{{imgPreview}}" mode='widthFix'  bindtap='closePreview'></image>
+    </view>
+    
+  </form>
+</view>

@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="search">
+      <view class="search-left">
+        <image src="../../images/search.png"></image>
+        <input placeholder="搜索目的地" placeholder-class="search-placeholder" bindtap='turn2SearchS'/>
+      </view>
+  </view>
+  <view>
+    <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item">
+      <view class="feed-item"  bindtap='bindPassageTap' data-passage_id="{{item.passage_id}}">
+        <view class="feed-content">
+          <image src="{{item.passage_img}}"></image>
+          <text>{{item.passage_title}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+

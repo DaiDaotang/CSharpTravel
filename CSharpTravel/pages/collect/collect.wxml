@@ -1,0 +1,11 @@
+<!--pages/collect/collect.wxml-->
+<view class="container">
+  <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item">
+      <view class="feed-item"  bindtap='bindPassageTap' data-passage_id="{{item.passage_id}}">
+        <view class="feed-content">
+          <image src="{{item.passage_img}}"></image>
+          <text>{{item.passage_title}}</text>
+        </view>
+      </view>
+    </block>
+</view>

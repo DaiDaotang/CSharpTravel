@@ -1,0 +1,21 @@
+<view class="container">
+
+<form bindsubmit='searchstrategy'>
+  <view class="view1" style='display:flex;flex-direction:row;'>
+      <picker bindchange="changeRegin" mode = "region" value="{{region}}" style='border: 2px solid rgb(41, 129, 180);border-radius: 30rpx;width:90%'>
+        <view class="tui-picker-detail">请选择地点：{{region[0]}} - {{region[1]}}- {{region[2]}}</view>
+      </picker>
+      <button bindtap='submit'>搜索</button>
+  </view>
+  </form>
+  <view>
+    <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item">
+      <view class="feed-item"  bindtap='bindPassageTap' data-passage_id="{{item.passage_id}}">
+        <view class="feed-content">
+          <text>{{item.passage_title}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+

@@ -1,0 +1,34 @@
+<!--pages/add_travel/add_travel.wxml-->
+<view class='whole' wx:if="{{true}}">
+
+  <view class='title'>
+    <text>来一次旅行！</text>
+  </view>
+
+  <form bindsubmit='addTravel'>
+    <view class='view0'>
+      <text class='placetext'>目的地：</text>
+      <input name='placename' auto-focus class='inputplace'></input>
+    </view>
+    <view class='view0'>
+      <text class='placetext'>开始日：</text>
+      <view class="section">  
+        <picker mode="date" value="{{dates}}" start="{{dates}}" end="2021-12-31" bindchange="bindDateChanges">  
+          <view class="picker">{{dates}}</view>  
+        </picker>  
+      </view>  
+    </view>
+    <view class='view0'>
+      <text class='placetext'>结束日：</text>
+      <view class="section">  
+        <picker mode="date" value="{{datee}}" start="{{dates}}" end="2021-12-31" bindchange="bindDateChangee">  
+          <view class="picker">{{datee}}</view>  
+        </picker>  
+      </view> 
+    </view>
+    <view class='view0'>
+      <button class='submitbtn' form-type='submit'>走，旅行去！</button>
+    </view>
+  </form>
+
+</view>

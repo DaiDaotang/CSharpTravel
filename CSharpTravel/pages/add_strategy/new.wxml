@@ -1,0 +1,36 @@
+<!--pages/add_strategy/add_strategy.wxml-->
+<!--pages/upload/upload.wxml-->
+<view class='whole'>
+  
+
+  <form bindsubmit='submit'class='form1'>
+    <view class="view1" style='display:flex;flex-direction:row;'>
+      <picker bindchange="changeRegin" mode = "region" value="{{region}}" style='border: 2px solid rgb(41, 129, 180);border-radius: 30rpx;width:90%'>
+        <view class="tui-picker-detail">请选择地点：{{region[0]}} - {{region[1]}}- {{region[2]}}</view>
+      </picker>
+    </view>
+
+    <view class="view1" style='border-bottom: 2px solid rgb(41, 129, 180)'>
+      <input name='placename' class='input-title' placeholder="请输入标题" bindinput="voteTitle"></input>
+    </view>
+
+    <view class="view1" style='border: 2px solid rgb(41, 129, 180);border-radius: 20rpx'>
+      <textarea placeholder='写下你的攻略吧~' name='content'></textarea>
+      <view class="img-v">
+        <view class="img" wx:for="{{imgs}}" wx:for-item="item">
+          <image src="{{item}}" class='upImg' data-index="{{index}}" mode="aspectFill" bindtap='previewImg'></image> 
+        </view>
+        <view class="upload-img-btn" bindtap="chooseImg">
+          <image src='/image/upload.png'></image>
+        </view>
+      </view> 
+    </view>
+
+    <button class='submit' formType='submit' disabled="{{loading}}">提交</button>
+
+    <view class='preview' animation='{{animation}}' wx:if="{{imgPreview!=''}}">
+      <image class='previewImage' src="{{imgPreview}}" mode='widthFix'  bindtap='closePreview'></image>
+    </view>
+    
+  </form>
+</view>

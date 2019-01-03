@@ -1,0 +1,39 @@
+/* pages/add/add.wxss */
+.allbtn{
+ margin-top: 600rpx;
+ display: flex;
+}
+.alltext{
+ margin-top: 70rpx;
+ display: flex;
+}
+
+.btn1Img {
+  margin-left: 80rpx;
+  width: 99rpx;
+  height: 99rpx;
+}
+
+.btn2Img {
+  margin-left: 150rpx;
+  width: 99rpx;
+  height: 99rpx;
+}
+.btn3Img {
+  margin-left: 150rpx;
+  width: 99rpx;
+  height: 99rpx;
+}
+.text1{
+  margin-left: 80rpx;
+  font-size: 30rpx;
+}
+.text2{
+  margin-left: 130rpx;
+  font-size: 30rpx;
+}
+.text3{
+  margin-left: 130rpx;
+  font-size: 30rpx;
+}
+
